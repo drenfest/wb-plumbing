@@ -8,6 +8,7 @@
     "export": "sapper export ./public",
     "rename": "sh rename-extensions.sh",
     "generate-sitemap": "node generate-sitemap",
+    "optimize-images": "imagemin images/services/* --out-dir=../../public/assets/images/services && imagemin images/icons/* --out-dir=../../public/assets/images/icons && imagemin images/heros/* --out-dir=../../public/assets/images/heros && imagemin images/* --out-dir=../../public/assets/images",
     "start": "node __sapper__/build",
     "cy:run": "cypress run",
     "cy:open": "cypress open",
@@ -22,6 +23,7 @@
     "file-loader": "^6.2.0",
     "sapper": "^0.28.0",
     "svelte": "^3.17.3",
+    "svelte-image": "^0.2.9",
     "svelte-loader": "^2.9.0",
     "webpack": "^4.7.0",
     "webpack-modules": "^1.0.0"
