@@ -29,5 +29,5 @@ export let backgroudColor = "transparent"
     <div class="container text-center">
         <slot></slot>
     </div>
-    <img src="/assets/images/wave.png" alt="wave icon"/>
+    <img loading="lazy" src="/assets/images/wave.png" alt="wave icon"/>
 </section>

@@ -8,7 +8,7 @@
     "export": "sapper export ./public",
     "rename": "sh rename-extensions.sh",
     "generate-sitemap": "node generate-sitemap",
-    "optimize-images": "imagemin images/services/* --out-dir=../../public/assets/images/services && imagemin images/icons/* --out-dir=../../public/assets/images/icons && imagemin images/heros/* --out-dir=../../public/assets/images/heros && imagemin images/* --out-dir=../../public/assets/images",
+    "optimize-images": "imagemin static/assets/images/services/* --out-dir=public/assets/images/services && imagemin static/assets/images/icons/* --out-dir=public/assets/images/icons && imagemin static/assets/images/heros/* --out-dir=public/assets/images/heros && imagemin static/assets/images/* --out-dir=public/assets/images",
     "start": "node __sapper__/build",
     "cy:run": "cypress run",
     "cy:open": "cypress open",

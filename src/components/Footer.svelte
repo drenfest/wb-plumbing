@@ -300,7 +300,7 @@
             </div>
             <div class="col-sm">
                 <a href="https://insightweb.net" title="Site Designed By Insight Marketing Solutions">
-                    <img src="/assets/images/designbyinsight.png" alt="Insight Marketing Solutions Inc Logo"/>
+                    <img loading="lazy" src="/assets/images/designbyinsight.png" alt="Insight Marketing Solutions Inc Logo"/>
                 </a>
             </div>
         </div>

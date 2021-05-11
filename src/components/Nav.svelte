@@ -107,6 +107,10 @@
 		background:var(--primary-color);
 		color: var(--primary-color);
 	}
+	.lazy {
+		background-image: none;
+		background-color: #F1F1FA;
+	}
 </style>
 <section class="bg-main-menu d-none d-md-block">
 	<nav class="container">
@@ -133,7 +137,7 @@
 							<a rel=prefetch class='dropdown-item {segment === "water-heaters" ? "active" : ""}' href='water-heaters' title="Water Heaters">Water Heaters</a>
 						</div>
 						<div class="col-6">
-							<div class="bg-image bg-acnav">
+							<div class="bg-image bg-acnav lazy">
 
 							</div>
 						</div>
