@@ -26,7 +26,7 @@ self.addEventListener('activate', event => {
 				if (key !== ASSETS) await caches.delete(key);
 			}
 
-			self.clients.claim();
+			await self.clients.claim();
 		})
 	);
 });
@@ -41,7 +41,7 @@ async function fetchAndCache(request) {
 
 	try {
 		const response = await fetch(request);
-		cache.put(request, response.clone());
+		await cache.put(request, response.clone());
 		return response;
 	} catch (err) {
 		const response = await cache.match(request);

@@ -3,8 +3,8 @@
 <script>
     export let showCounty = ""
     export let linksHeight = 0;
-    export let mapHeight = "100%";
-    export let mapWidth = "100%";
+    export let mapHeight = "auto";
+    export let mapWidth = "auto";
     export let lpages = [
         {
             id: "addison-il",
@@ -3564,7 +3564,7 @@
                     {#each lpages as aItem}
                         {#if showCounty === aItem.county || showCounty === ""}
                         <li class="lpage-item-{aItem.county} lpage">
-                            <a class="lpage-link-{aItem.county} lpage-link" href="/sewer-and-drains-contractor-{aItem.id}#content-section" title="Sewer &amp; Drain Repair Services Near{aItem.city}">{ aItem.city }, { aItem.state } Sewer &amp; Drain Repair</a>
+                            <a class="lpage-link-{aItem.county} lpage-link" href="/sewer-drains-repair-contractor-{aItem.id}#content-section" title="Sewer &amp; Drain Repair Services Near{aItem.city}">{ aItem.city }, { aItem.state } Sewer &amp; Drain Repair</a>
                         </li>
                             <li class="lpage-item-{aItem.county} lpage">
                                 <a class="lpage-link-{aItem.county} lpage-link" href="/hydro-jetting-{aItem.id}#content-section" title="Hydro Jetting Services Near{aItem.city}">{ aItem.city }, { aItem.state } Hydro Jetting Services</a>

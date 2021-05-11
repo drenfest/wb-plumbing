@@ -1,6 +1,6 @@
 <script>
     let lpageNames = [
-        "sewer-drain-repair-contractor",
+        "sewer-drains-repair-contractor",
         "hydro-jetting"
     ];
     let lpageCities = [
@@ -229,7 +229,7 @@
     .footernav-item {
         display: block;
         width: 100%;
-        padding: .25rem 0rem;
+        padding: 1rem 0rem;
         clear: both;
         font-weight: 400;
         color: #fff;

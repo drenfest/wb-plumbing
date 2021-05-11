@@ -1,11 +1,32 @@
 {
 	"background_color": "#ffffff",
 	"theme_color": "#333333",
-	"name": "TODO",
-	"short_name": "TODO",
+	"name": "WBPlumbing",
+	"short_name": "WBPlumbing",
 	"display": "minimal-ui",
-	"start_url": "/",
+	"scope": "/",
+	"start_url": ".",
 	"icons": [
+		{
+			"src": "logo-48.png",
+			"sizes": "48x48",
+			"type": "image/png"
+		},
+		{
+			"src": "logo-96.png",
+			"sizes": "96x96",
+			"type": "image/png"
+		},
+		{
+			"src": "logo-144.png",
+			"sizes": "144x144",
+			"type": "image/png"
+		},
+		{
+			"src": "logo-168.png",
+			"sizes": "168x168",
+			"type": "image/png"
+		},
 		{
 			"src": "logo-192.png",
 			"sizes": "192x192",
@@ -15,6 +36,12 @@
 			"src": "logo-512.png",
 			"sizes": "512x512",
 			"type": "image/png"
+		},
+		{
+			"src": "logo-512.png",
+			"sizes": "512x512",
+			"type": "image/png",
+			"purpose": "any maskable"
 		}
 	]
 }

@@ -14,7 +14,8 @@
 
 }
 body{
-        font-family: 'Quattrocento', serif;
+    font-family: 'Quattrocento', serif;
+    overflow-x: hidden;
 }
 html{
     overflow-x:hidden;
@@ -34,6 +35,7 @@ h4, h5, h6{
 }
 p {
     font-family: 'Quattrocento', serif;
+    font-size:16px;
 }
 .btn {
 font-family: 'Oswald', sans-serif!important;
@@ -74,6 +76,7 @@ a.btn-primary {
     }
 img{
     max-width:100%;
+    display: block;
 }
 
 footer h2, footer h3, footer h4, footer h5, footer h6 {
