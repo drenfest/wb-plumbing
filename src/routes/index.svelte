@@ -222,7 +222,7 @@
 				<Coupon couponPrice="$50" couponTitle="Off Sump Pumps &amp; Battery Backups" couponSubtitle="" couponText="Not to be combined with any other discount or offer"/>
 			</div>
 			<div class="col-xs-12 col-sm-4">
-				<Coupon couponPrice="$30" couponTitle="Off Power Rodding" couponSubtitle="with Free Televising" couponText="Not to be combined with any other discount or offer"/>
+				<Coupon couponPrice="$89.99" couponTitle="Power Rodding" couponSubtitle="with Free Televising" couponText="Not to be combined with any other discount or offer"/>
 			</div>
 			<div class="col-xs-12 col-sm-4">
 				<Coupon couponPrice="$50" couponTitle="Off Hydro Jetting" couponSubtitle="" couponText="Not to be combined with any other discount or offer"/>
