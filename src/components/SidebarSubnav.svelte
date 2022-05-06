@@ -1,4 +1,8 @@
 <script>
+    export let landing = false;
+    export let linkCity = null;
+    export let linkState = null;
+    export let segment;
 </script>
 <style>
     .sidebar-subnav {
@@ -36,19 +40,37 @@
     }
 </style>
 <section class="sidebar-subnav">
+    {#if (landing===false)}
     <ul>
-        <li><a class="backwater-valves" rel="prefetch" href='backwater-valves' title="Backwater Valves">Backwater Valves</a></li>
-        <li><a class="battery-backups" rel="prefetch" href='battery-backups' title="Battery Backups">Battery Backups</a></li>
-        <li><a class="camera-video-inspection" rel="prefetch" href='camera-video-inspection' title="Camera & Video Inspection Services">Camera Services</a></li>
-        <li><a class="drain-cleaning" rel="prefetch" href='drain-cleaning' title="Drain Cleaning">Drain Cleaning</a></li>
-        <li><a class="flood-controls" rel="prefetch" href='flood-controls' title="Flood Controls">Flood Controls</a></li>
-        <li><a class="foundation-leaks" rel="prefetch" href='foundation-leaks' title="Window Wells & Foundation leaks">Foundation Leaks</a></li>
-        <li><a class="hydro-jetting" rel="prefetch" href='hydro-jetting' title="Hydro Jetting">Hydro Jetting</a></li>
-        <li><a class="plumbing" rel="prefetch" href='plumbing' title="Plumbing">Plumbing</a></li>
-        <li><a class="pumps" rel="prefetch" href='pumps' title="Power Rodding">Pumps</a></li>
-        <li><a class="seepage-tile" rel="prefetch" href='seepage-tile' title="Seepage Tile">Seepage Tile</a></li>
-        <li><a class="sewer-cleanouts" rel="prefetch" href='sewer-cleanouts' title="Sewer Cleanouts">Sewer Cleanouts</a></li>
-        <li><a class="sewer-drain-repair" rel="prefetch" href='sewer-drain-repair' title="Sewer & Drain Repair">Sewer &amp; Drain Repair</a></li>
-        <li><a class="water-heaters" rel="prefetch" href='water-heaters' title="Water Heaters">Water Heaters</a></li>
+            <li><a class="backwater-valves" rel="prefetch" href='backwater-valves' title="Backwater Valves">Backwater Valves</a></li>
+            <li><a class="battery-backups" rel="prefetch" href='battery-backups' title="Battery Backups">Battery Backups</a></li>
+            <li><a class="camera-video-inspection" rel="prefetch" href='camera-video-inspection' title="Camera & Video Inspection Services">Camera Services</a></li>
+            <li><a class="drain-cleaning" rel="prefetch" href='drain-cleaning' title="Drain Cleaning">Drain Cleaning</a></li>
+            <li><a class="flood-controls" rel="prefetch" href='flood-controls' title="Flood Controls">Flood Controls</a></li>
+            <li><a class="foundation-leaks" rel="prefetch" href='foundation-leaks' title="Window Wells & Foundation leaks">Foundation Leaks</a></li>
+            <li><a class="hydro-jetting" rel="prefetch" href='hydro-jetting' title="Hydro Jetting">Hydro Jetting</a></li>
+            <li><a class="plumbing" rel="prefetch" href='plumbing' title="Plumbing">Plumbing</a></li>
+            <li><a class="pumps" rel="prefetch" href='pumps' title="Power Rodding">Pumps</a></li>
+            <li><a class="seepage-tile" rel="prefetch" href='seepage-tile' title="Seepage Tile">Seepage Tile</a></li>
+            <li><a class="sewer-cleanouts" rel="prefetch" href='sewer-cleanouts' title="Sewer Cleanouts">Sewer Cleanouts</a></li>
+            <li><a class="sewer-drain-repair" rel="prefetch" href='sewer-drain-repair' title="Sewer & Drain Repair">Sewer &amp; Drain Repair</a></li>
+            <li><a class="water-heaters" rel="prefetch" href='water-heaters' title="Water Heaters">Water Heaters</a></li>
     </ul>
+        {/if}
+    {#if (landing=true && (linkCity !== null && linkState !== null))}
+        <ul>
+            <li><a class="backwater-valves" rel="prefetch" href='backwater-valves' title="Backwater Valves">Backwater Valves</a></li>
+            <li><a class="battery-backups" rel="prefetch" href='battery-backups' title="Battery Backups">Battery Backups</a></li>
+            <li><a class="camera-video-inspection" rel="prefetch" href='camera-video-inspection' title="Camera & Video Inspection Services">Camera Services</a></li>
+            <li><a class="drain-cleaning" rel="prefetch" href='drain-cleaning' title="Drain Cleaning">Drain Cleaning</a></li>
+            <li><a class="flood-controls" rel="prefetch" href='flood-controls' title="Flood Controls">Flood Controls</a></li>
+            <li><a class="foundation-leaks" rel="prefetch" href='foundation-leaks' title="Window Wells & Foundation leaks">Foundation Leaks</a></li>
+            <li><a class="hydro-jetting-{linkCity.replace(' ','-').toLowerCase()}-{linkState.toLowerCase()}" rel="prefetch" href="/hydro-jetting-{linkCity.replace(' ','-').toLowerCase()}-{linkState.toLowerCase()}#content-section" title="Hydro Jetting Services Near {linkCity}">Hydro Jetting Services</a></li>
+            <li><a class="pumps" rel="prefetch" href='pumps' title="Power Rodding">Pumps</a></li>
+            <li><a class="seepage-tile" rel="prefetch" href='seepage-tile' title="Seepage Tile">Seepage Tile</a></li>
+            <li><a class="sewer-drains-repair-contractor-{linkCity.replace(' ','-').toLowerCase()}-{linkState.toLowerCase()}" rel="prefetch" href="/sewer-drains-repair-contractor-{linkCity.replace(' ','-').toLowerCase()}-{linkState.toLowerCase()}#content-section" title="Sewer &amp; Drain Repair Services Near {linkCity}">Sewer &amp; Drain Repair</a></li>
+            <li><a class="sewer-cleanouts" rel="prefetch" href='sewer-cleanouts' title="Sewer Cleanouts">Sewer Cleanouts</a></li>
+            <li><a class="water-heaters" rel="prefetch" href='water-heaters' title="Water Heaters">Water Heaters</a></li>
+        </ul>
+    {/if}
 </section>

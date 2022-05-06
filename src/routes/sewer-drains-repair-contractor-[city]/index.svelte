@@ -7,14 +7,20 @@
 		// 			});
 		// 		})
 		let cs = await params.city.split("-");
-		let state = await cs[cs.length - 1].toUpperCase();
-		let city = await params.city.replace("-"+state.toLowerCase(),'').replace('-',' ').replace(params.city.substr(0,1),params.city.substr(0,1).toUpperCase());
-		return {nnCity:city,nnState:state};
+		let stateName = cs[cs.length - 1].toUpperCase();
+		let cityNameArr = cs.splice(0,cs.length - 1);
+		var cityName = '';
+		for(let i=0;i<cityNameArr.length;i++){
+			cityNameArr[i] = await cityNameArr[i].replace(cityNameArr[i].substr(0,1),cityNameArr[i].substr(0,1).toUpperCase());
+		}
+		cityName = cityNameArr.join(" ").replace('-',' ')
+		return {nnCity:cityName,nnState:stateName,cityState:cityName+', '+stateName};
 	}
 </script>
 <script>
 	export let nnCity;
 	export let nnState;
+	export let cityState;
 	export let locations = [
 		{
 			id: "addison-il",

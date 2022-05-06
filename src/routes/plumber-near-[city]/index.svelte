@@ -18,6 +18,7 @@
 	}
 </script>
 <script>
+	import WhyUs from '../../components/WhyUs.svelte';
 	export let nnCity;
 	export let nnState;
 	export let cityState;
@@ -1724,51 +1725,22 @@
 	];
 </script>
 <style>
+
 </style>
 <svelte:head>
-	<title> Hydro Jetting {cityState} | Wally Blanton Plumbing and Sewer Plumbing +1-847-345-8185 | +1-815-348-0336</title>
-	<meta name="description" content="We are a family owned and operated business licensed, bonded and insured since 1989 specializing in hydro jetting {cityState}. +1-847-345-8185">
+	<title> Wally Blanton Plumbing and Sewer Servicing Your Plumbing and Sewer Needs in {cityState} For Over 30 Years</title>
+	<meta name="description" content="Wally Blanton Plumbing and Sewer is Your Licensed {cityState} Company that specializes in Plumbing installation, Repair and Maintenance. +1-847-345-8185 | +1-815-348-0336">
 </svelte:head>
-<h2>Hydro Jetting Service near {cityState}</h2>
-<p>Wally Blanton Plumbing and Sewer is a full-service Hydro Jetting business. We serve residents throughout the Northern Chicagoland area. We are a family owned and operated business that has been licensed, bonded and insured since 1989. Our highly trained plumbers have the knowledge and experience necessary to handle anything from a small toilet repair or clogged drain cleaning service, to a large plumbing and Hydro Jetting or repair emergencies.</p>
-<p>Hydro-jetting uses specialized devices and highly pressurized water to break up and remove troublesome buildup in your pipes. Prior to starting the process, our licensed, insured technician will perform a detailed inspection of your system to check for damage. Once it is determined safe, a jetting hose will be inserted into the piping, and an appropriate amount of water pressure will be pumped into your pipe system.</p>
-<p>Hydro Jetting or repair problems crop up at the most inconvenient of times, so it makes sense to deal with a Plumber and Hydro Jetting or repair company you can rely on and who will actually answer the phone when you need them the most. We are a family of plumbers with a passion for the industry. We can have your sewer back up and running again in no time. Our licensed and insured {cityState} plumber and sewer cleaners are available anytime you need us, day or night, 24-hours a day. We will also schedule appointments based on your schedule-for the most convenient, timely service possible.</p>
-<p>This intense pressure will remove large amounts of buildup, increasing the overall health and efficiency of your plumbing system. With fewer blockages in the pipe, clogging becomes significantly less likely. This method works with pipes 1 ½ inch to 24 inches in diameter.</p>
-<p>While this is not the answer for every problem, we can help you figure that out with a free estimate - based on over 3 decades of experience in sewer and drain cleaning.</p>
-<p>Businesses run an especially high risk of clogged drains/lines. Due to the increased volume, pipe issues can quickly get out of hand. Whether you need an estimate for your home, restaurant, hospital, or parking lot drains, call Wally Blanton Plumbing &amp; Sewer today at +1-847-345-8185 or +1-815-348-0336!</p>
-<p>From sewer repair and installation to drain rodding of all kinds for your home or business, we are fully equipped to solve any of your draining problems, big or small, at a price you can afford with the least amount of inconvenience to you.</p>
-<ul>
-	<li>Sewer Repairs And Clean-Out Installations</li>
-	<li>Emergency Issues 24/7</li>
-	<li>Repairs On All Makes & Models</li>
-	<li>Maintenance</li>
-</ul>
-<p>Our Hydro Jetting services not only serve the {cityState} area but also all of Lake County, North Shore and McHenry County. Please call any of the numbers at the top of this page or <a href="/contact" title="Go to contact page">click here</a> to contact us by filling out a form.</p>
-<h3>Residential And Commercial Hydro Jetting Services {cityState} </h3>
-<div class="row">
-	<div class="col-xs-12 col-sm-6">
-		<ul>
-			<li>Sinks</li>
-			<li>Faucets</li>
-			<li>Toilets</li>
-			<li>Sump Pumps</li>
-			<li>Battery Backup Systems</li>
-			<li>Ejector Pumps</li>
-			<li>Sewer Line Repair and Clean Out Installation</li>
-			<li>Drain Cleaning and Power Rodding</li>
-		</ul>
-	</div>
-	<div class="col-xs-12 col-sm-6">
-		<ul>
-			<li>Hydro Jetting</li>
-			<li>Video Televising and Inspection</li>
-			<li>Leak Repairs</li>
-			<li>Frozen and Burst Pipe Repair</li>
-			<li>Water Heater Installation, Repair and Service</li>
-			<li>Garbage Disposals</li>
-			<li>Water Line Repair and Installation</li>
-			<li>Basement Drainage and Seepage</li>
-		</ul>
-	</div>
-</div>
+
+	<WhyUs
+			whyUsTitle="Wally Blanton Plumbing and Sewer Services in {cityState}"
+			landing="true"
+			whyUsCity = {nnCity}
+			whyUsState = {nnState}
+	>
+		<p id="content-section">Wally Blanton Plumbing and Sewer offers cost conscious, full service plumbing and sewer repair services to {cityState}  homeowners & business.  We have been {cityState} trusted plumbing providers for over 30 years.  Plumbing is vital for homes and businesses, so you need a reliable plumber to handle any issues that arise. Our highly skilled plumbers can handle a wide variety of plumbing repairs and services including leak repairs, toilet repair and installation, drain cleaning, water heater installation, and many additional services. Once we’ve completed our work at your home or office, we make sure to leave everything clean. We take pride in our work and strive to make our {cityState}customers completely satisfied and all work is always guaranteed. </p>
+	</WhyUs>
+
+
+
 

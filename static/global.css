@@ -13,6 +13,9 @@
     --dark: #343a40;
 
 }
+* {
+    box-sizing: border-box;
+}
 body{
     font-family: 'Quattrocento', serif;
     overflow-x: hidden;

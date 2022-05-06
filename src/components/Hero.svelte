@@ -1,8 +1,8 @@
 <script>
     export let heroImage="/assets/images/heros/home-hero.jpg";
-    export let heroTitle="Providing Your Family";
-    export let heroBigText="Affordable & Quality HVAC Services For Over 30 Years";
-    export let heroText=" Your Hvac | A/C | Furnace Installation & Repair Company";
+    export let heroTitle=null;
+    export let heroBigText=null;
+    export let heroText=null;
     export let hideHero = false;
 </script>
 <style>
@@ -19,7 +19,7 @@
 
 
 .grid-container {
-    
+
     padding-left:2rem;
     padding-right:2rem;
 
@@ -178,7 +178,7 @@ background-image:none!important;
 
 </style>
 {#if !hideHero}
-<section id="hero-section" style=" background-image: url({heroImage});">
+<section id="hero-section" style="background-image: url({heroImage});">
     <div class="grid-container container">
         <div class="hero-left">
             <hr class="slant-box">

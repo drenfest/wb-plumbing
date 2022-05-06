@@ -6,15 +6,15 @@
     import {onMount} from 'svelte';
     onMount(()=>{
         if(nnCity.length > 1 && nnState.length > 1){
-            let pms = `?city=${nnCity.replace('-',' ')}&state=${nnState}`;
-            let uri = "/nn.php?"+encodeURI(pms);
+            let pms = encodeURI(`?city=${nnCity.replace('-',' ')}&state=${nnState}`);
+            let uri = "https://wbplumbingsewer.com/nn.php"+pms;
             fetch(uri).then(function(response) {
                 response.text().then(function(text) {
                     content = text;
                 })
             });
         }else{
-            let uri = "/nn.php?";
+            let uri = "https://wbplumbingsewer.com/nn.php";
             fetch(uri).then(function(response) {
                 response.text().then(function(text) {
                     content = text;

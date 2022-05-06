@@ -3564,12 +3564,9 @@
                     {#each lpages as aItem}
                         {#if showCounty === aItem.county || showCounty === ""}
                         <li class="lpage-item-{aItem.county} lpage">
-                            <a class="lpage-link-{aItem.county} lpage-link" href="/sewer-drains-repair-contractor-{aItem.id}#content-section" title="Sewer &amp; Drain Repair Services Near{aItem.city}">{ aItem.city }, { aItem.state } Sewer &amp; Drain Repair</a>
+                            <a class="lpage-link-{aItem.county} lpage-link" href="/plumber-near-{aItem.id}#content-section" title="Plumbing Services Near{aItem.city}">{ aItem.city }, { aItem.state } Plumbing Services</a>
                         </li>
-                            <li class="lpage-item-{aItem.county} lpage">
-                                <a class="lpage-link-{aItem.county} lpage-link" href="/hydro-jetting-{aItem.id}#content-section" title="Hydro Jetting Services Near{aItem.city}">{ aItem.city }, { aItem.state } Hydro Jetting Services</a>
-                            </li>
-                        {/if}
+                    {/if}
                     {/each}
                 </ul>
             </div>
